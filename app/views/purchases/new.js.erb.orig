@@ -1,0 +1,2 @@
+alert("Got some js!") 
+$("#new_link").hide().after("<%= j render('form') %>")

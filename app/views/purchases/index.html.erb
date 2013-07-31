@@ -1,0 +1,21 @@
+<h1>Listing purchases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @purchases %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Purchase', new_purchase_path, remote: true, id: :new_link %>

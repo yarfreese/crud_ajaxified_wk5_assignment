@@ -1,0 +1,4 @@
+console.log("<%= @purchase.errors.full_messages.inspect %>")
+$('#new_purchase').remove()
+$('#new_link').show()
+$('#incomplete_purchases').append('<%= j render(@purchase) %>')
